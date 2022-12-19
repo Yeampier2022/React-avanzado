@@ -1,15 +1,14 @@
-import React from "react";
-import { ListOfCategories } from "./components/ListOfCategory";
-import { GlobalStyles } from "./styles/GlobalStyles";
-import { ListOfPhotoCards } from "./components/ListOfPhotoCart";
-import { Logo } from "./components/logo";
+import React from 'react'
+import { ListOfCategories } from './components/ListOfCategories'
+import { GlobalStyle } from './styles/GlobalStyles'
+import { ListOfPhotoCards } from './container/ListOfPhotoCards'
+import { Logo } from './components/Logo'
 
-
-export const App = () =>(  
+export const App = () => (
   <div>
-  <GlobalStyles />
-  <Logo />
-  <ListOfCategories />
-  <ListOfPhotoCards />
+    <GlobalStyle />
+    <Logo />
+    <ListOfCategories />
+    <ListOfPhotoCards categoryId={2} />
   </div>
-  )
+)
