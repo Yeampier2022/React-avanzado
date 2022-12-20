@@ -1,5 +1,6 @@
 import React from 'react'
 import { PhotoCard } from '../PhotoCard'
+
 export const ListOfPhotoCardsComponent = ({ data: { photos = [] } } = {}) => {
   return (
     <ul>
